@@ -1,11 +1,5 @@
 {
-    "name": "PayirseAI",
-    "version": 2,
-    "builds": [{
-        "src": "*py",
-        "use": "@vercel/python"
-    }],
-    "routes": [
-        { "src": "(.*)", "dest": "app.py" }
+    "rewrites" : [
+        {"source" : "/(.*)", "destination" : "API/index.py"}
     ]
- }
+}
